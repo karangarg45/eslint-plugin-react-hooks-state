@@ -11,7 +11,7 @@ const [localName, setLocalName] = useState(name);
 return (
   <input
     type="text"
-    value="localName"
+    value={localName}
     onChange={(ev) => setLocalName(ev.target.value)}
   />
 );
@@ -31,7 +31,7 @@ useEffect(() => {
 
 return(
 
-    <input type="text" value="localName" onChange={(ev) => setLocalName(ev.target.value) }>
+    <input type="text" value={localName} onChange={(ev) => setLocalName(ev.target.value) }>
 )
 
 ```
